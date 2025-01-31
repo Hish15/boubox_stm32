@@ -1,3 +1,6 @@
 [submodule "cmake/stm32-cmake"]
 	path = cmake/stm32-cmake
 	url = https://github.com/ObKo/stm32-cmake
+[submodule "deps/PN532"]
+	path = deps/PN532
+	url = https://github.com/Hish15/PN532.git
