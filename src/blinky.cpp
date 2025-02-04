@@ -1,7 +1,7 @@
 
 #include "pin.hpp"
 
-#include <stm32f4xx_hal.h>
+#include <stm32h7xx_hal.h>
 
 const GPIO_InitTypeDef conf_out_no_pull = {
     .Mode = GPIO_MODE_OUTPUT_PP,
