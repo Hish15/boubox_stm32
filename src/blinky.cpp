@@ -12,14 +12,14 @@ const GPIO_InitTypeDef conf_in={
     .Pull = GPIO_NOPULL,
     .Speed = GPIO_SPEED_HIGH};
 Pin red_led(
-    GPIOG,
+    GPIOB,
     GPIO_PIN_14,
-    [](){__HAL_RCC_GPIOG_CLK_ENABLE();},
+    [](){__HAL_RCC_GPIOB_CLK_ENABLE();},
     conf_out_no_pull);
 Pin green_led(
-    GPIOG,
-    GPIO_PIN_13,
-    [](){__HAL_RCC_GPIOG_CLK_ENABLE();},
+    GPIOB,
+    GPIO_PIN_7,
+    [](){__HAL_RCC_GPIOB_CLK_ENABLE();},
     conf_out_no_pull);
 
 //This prevent name mangling for functions used in C/assembly files.
